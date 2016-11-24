@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.MainActivity"
+    android:weightSum="1">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c75625"
+        android:navigationIcon="?attr/homeAsUpIndicator">
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:padding="2dp"
+        android:background="#ffffff"
+        android:layout_height="208dp"
+        android:layout_weight="0.02">
+
+
+
+        <EditText
+            android:id="@+id/edit_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入密码"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/edit_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入手机号码"
+            android:layout_above="@+id/edit_2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="29dp" />
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:background="#ffffff"
+            android:textColor="#55ae57"
+            android:layout_gravity="right"
+            android:text="登陆"
+            android:layout_marginRight="104dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/edit_2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:background="#ffffff"
+            android:textColor="#55ae57"
+            android:layout_gravity="right"
+            android:text="忘记密码"
+            android:layout_marginRight="104dp"
+            android:layout_marginEnd="104dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/edit_2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <Button
+
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:background="#ffffff"
+        android:textColor="#55ae57"
+        android:text="立即用手机号注册账号"
+        android:layout_marginTop="300dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
+
+
+
+
